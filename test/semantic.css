@@ -38,7 +38,7 @@ ul {
 	padding-left: 0;
 	margin: 0;
 }
-ul > li {
+ul > li:not(:last-child) {
 	margin-right: 30px;
 }
 .box {
@@ -58,7 +58,7 @@ ul > li {
 	padding-bottom: 20px;
 }
 
-footer {
+.footer {
 	font-size: 13px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -81,3 +81,13 @@ section {
 	margin-bottom: 20px;
 }
 
+section:nth-child(2) {
+	background-color: moccasin;
+}
+
+
+.link {
+	background-color: rebeccapurple;
+	color: white;
+	padding: 8px 15px;
+}
