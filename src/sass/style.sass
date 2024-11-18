@@ -9,7 +9,7 @@
   --light-rgb: 255, 255, 255
 
 body
-  font-family: var(--nunito-sans)
+  font-family: var(--open-sans)
 
 a
   text-decoration: none
@@ -21,8 +21,11 @@ a
   padding-left: 15px
   padding-right: 15px
 
-
 .header
+  border-bottom: 1px solid #DEDEDE
+
+
+.header-wrapper
   display: flex
   align-items: center
   gap: 196px
@@ -42,7 +45,7 @@ a
 .nav
   flex-grow: 1
   display: flex
-  gap: 46px
+  gap: 47px
 
 .nav-link
   color: var(--dark)
@@ -102,6 +105,7 @@ a
   padding-bottom: 142px
   padding-top: 142px
 
+
 .breadcrumbs
   display: flex
   align-items: center
@@ -129,10 +133,12 @@ a
 
 .hero-title
   color: var(--light)
-  font-family: var(--nunito-sans)
   font-weight: 700
   font-size: 79px
   text-transform: capitalize
+  font-family: var(--nunito-sans)
+  margin-top: 17px //
+  margin-bottom: 20px
 
 .hero-description
   color: rgba(var(--light-rgb), 0.8)
@@ -140,3 +146,4 @@ a
   line-height: 160%
   max-width: 320px
   margin: 0 auto
+  margin-top: 17px
