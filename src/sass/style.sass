@@ -9,6 +9,7 @@
   --light-rgb: 255, 255, 255
   --dark-rgb: 68, 55, 55
   --line: #DEDEDE
+  --tr: 0.2s
 
 body
   font-family: var(--open-sans)
@@ -60,6 +61,7 @@ a
     height: 3px
     background-color: transparent
     border-radius: 1.5px
+    transition: var(--tr)
   &:hover
     &:after
       background-color: var(--accent-light)
@@ -130,6 +132,7 @@ a
 
 .breadcrumbs-link
   color: rgba(var(--light-rgb), 0.5)
+  transition: var(--tr)
   &:hover
     color: var(--accent-light)
 
@@ -203,6 +206,7 @@ a
   padding: 22px 25px
   text-decoration: none
   border: none
+  transition: var(--tr)
   &:hover
     background-color: var(--accent-dark)
     cursor: pointer
@@ -300,6 +304,7 @@ a
   color: var(--dark)
   border: 0
   text-decoration: none
+  transition: var(--tr)
   &:hover
     cursor: pointer
     background-color: var(--accent-dark)
@@ -353,6 +358,9 @@ a
     font-weight: 400
     font-size: 15px
     line-height: 160%
+    transition: var(--tr)
+    &:hover
+      color: var(--accent-light)
 
 .footer-list
   font-weight: 700
@@ -376,4 +384,7 @@ a
   text-transform: uppercase
   color: var(--accent-light)
   margin-top: 12px
+  transition: var(--tr)
+  &:hover
+    color: var(--light)
 
