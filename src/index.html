@@ -9,12 +9,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.min.css">
-	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
 
 </head>
 <body>
-<header class="header">
+<header class="header" id="headerTop">
 	<div class="container">
 		<div class="header-wrapper">
 			<div class="logo"></div>
@@ -44,12 +44,12 @@
 		<div class="banner-wrapper">
 				<h2 class="banner-title"><span>Скидка</span>-30%</h2>
 				<p class="banner-description">Только при&nbsp;покупке 3-х и более позиций, мы дарим скидку. Акции не&nbsp;суммируются.</p>
-				<button class="banner-btn">Купить сейчас</button>
+				<a class="banner-btn" href="#menuBurger">Купить сейчас</a>
 		</div>
 	</div>
 </section>
 <main>
-	<section>
+	<section id="menuBurger">
 		<div class="container">
 			<div class="menu">
 				<div class="menu-header">
@@ -184,5 +184,7 @@
 		</div>
 	</div>
 </footer>
+<a class="button-up" href="#headerTop">Наверх</a>
+<script src="js/script.js"></script>
 </body>
 </html>
