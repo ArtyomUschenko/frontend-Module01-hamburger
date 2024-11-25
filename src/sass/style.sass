@@ -357,6 +357,7 @@ a
 .footer-wrapper
   display: flex
   justify-content: space-between
+  gap: 15px
 
 
 .footer-logo
@@ -370,6 +371,8 @@ a
 
 .footer-item
   color: var(--light)
+  &:last-child
+    flex-basis: 194px
 
 .footer-title
   font-family: var(--nunito-sans)
@@ -408,20 +411,24 @@ a
     font-weight: 400
     color: rgba(var(--light-rgb), 0.9)
 
+
+
+
+
 .footer-tel
   display: block
   font-family: var(--nunito-sans)
   font-weight: 800
   font-size: 20px
+  text-align: right
   text-transform: uppercase
   color: var(--accent-light)
   margin-top: 12px
   transition: var(--tr)
   &:hover
     color: var(--light)
-
-
-
+  &._mobile
+    display: none
 
 
 .contact
@@ -542,3 +549,19 @@ a
         margin-bottom: 0
       .menu-info
         flex-basis: 40%
+
+  .footer-tel
+    &._mobile
+      display: block
+      text-align: left
+
+  .footer-item
+    &:last-child
+      display: none
+
+  .footer-nav
+    margin-bottom: 20px
+
+  .footer
+    padding-top:  62px
+    padding-bottom: 71px
