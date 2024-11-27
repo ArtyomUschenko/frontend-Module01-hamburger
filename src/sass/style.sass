@@ -27,7 +27,15 @@ a
 
 .header
   border-bottom: 1px solid var(--line)
-
+  .burger-menu
+    display: none
+    width: 34px
+    height: 22px
+    background-image: url("../img/menu.svg")
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: transparent
+    border: none
 
 .header-wrapper
   display: flex
@@ -565,3 +573,19 @@ a
   .footer
     padding-top:  62px
     padding-bottom: 71px
+
+
+@media (max-width: 730px)
+  .nav
+    display: none
+  .header
+    .burger-menu
+      display: block
+    .header-wrapper
+      gap: 21px
+      padding-top: 19px
+      padding-bottom: 19px
+    .logo
+      width: 116px
+      height: 37px
+      flex-grow: 1
