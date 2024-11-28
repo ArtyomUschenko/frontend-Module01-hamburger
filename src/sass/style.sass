@@ -646,6 +646,9 @@ a
     margin-bottom: 20px
   .banner-btn
     max-width: 198px
+
+  .menu
+    margin-bottom: 80px
   .menu-header
     margin-top: 58px
     margin-bottom: 30px
@@ -670,3 +673,18 @@ a
     margin-bottom: 14px
   .menu-btn
     padding: 11px 22px
+  .menu-item
+    &._additionally
+      .menu-thumb
+        height: 30vw
+
+
+
+@media (max-width: 450px)
+  .menu-item
+    &._additionally
+      .menu-thumb
+        flex-basis: calc(100% - 130px - 20px)
+        height: 38vw
+      .menu-info
+        flex-basis: 130px
